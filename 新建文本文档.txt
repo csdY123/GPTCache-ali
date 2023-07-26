@@ -1,0 +1,409 @@
+E:\GPTCache\GPTCache-main>python setup.py install
+Traceback (most recent call last):
+  File "E:\GPTCache\GPTCache-main\setup.py", line 13, in <module>
+    long_description = fh.read()
+                       ^^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xa1 in position 127: illegal multibyte sequence
+
+E:\GPTCache\GPTCache-main>python setup.py install
+running install
+C:\Python311\Lib\site-packages\setuptools\command\install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+C:\Python311\Lib\site-packages\setuptools\command\easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running bdist_egg
+running egg_info
+creating gptcache.egg-info
+writing gptcache.egg-info\PKG-INFO
+writing dependency_links to gptcache.egg-info\dependency_links.txt
+writing entry points to gptcache.egg-info\entry_points.txt
+writing requirements to gptcache.egg-info\requires.txt
+writing top-level names to gptcache.egg-info\top_level.txt
+writing manifest file 'gptcache.egg-info\SOURCES.txt'
+reading manifest file 'gptcache.egg-info\SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'gptcache.egg-info\SOURCES.txt'
+installing library code to build\bdist.win-amd64\egg
+running install_lib
+running build_py
+creating build
+creating build\lib
+creating build\lib\gptcache
+copying gptcache\client.py -> build\lib\gptcache
+copying gptcache\config.py -> build\lib\gptcache
+copying gptcache\core.py -> build\lib\gptcache
+copying gptcache\report.py -> build\lib\gptcache
+copying gptcache\session.py -> build\lib\gptcache
+copying gptcache\__init__.py -> build\lib\gptcache
+creating build\lib\gptcache_server
+copying gptcache_server\server.py -> build\lib\gptcache_server
+copying gptcache_server\__init__.py -> build\lib\gptcache_server
+creating build\lib\gptcache\adapter
+copying gptcache\adapter\adapter.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\api.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\base.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\diffusers.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\dolly.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\langchain_models.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\llama_cpp.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\minigpt4.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\openai.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\replicate.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\stability_sdk.py -> build\lib\gptcache\adapter
+copying gptcache\adapter\__init__.py -> build\lib\gptcache\adapter
+creating build\lib\gptcache\embedding
+copying gptcache\embedding\base.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\cohere.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\data2vec.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\fasttext.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\huggingface.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\langchain.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\onnx.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\openai.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\paddlenlp.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\rwkv.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\sbert.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\string.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\timm.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\uform.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\vit.py -> build\lib\gptcache\embedding
+copying gptcache\embedding\__init__.py -> build\lib\gptcache\embedding
+creating build\lib\gptcache\manager
+copying gptcache\manager\data_manager.py -> build\lib\gptcache\manager
+copying gptcache\manager\eviction_manager.py -> build\lib\gptcache\manager
+copying gptcache\manager\factory.py -> build\lib\gptcache\manager
+copying gptcache\manager\__init__.py -> build\lib\gptcache\manager
+creating build\lib\gptcache\processor
+copying gptcache\processor\check_hit.py -> build\lib\gptcache\processor
+copying gptcache\processor\post.py -> build\lib\gptcache\processor
+copying gptcache\processor\pre.py -> build\lib\gptcache\processor
+copying gptcache\processor\__init__.py -> build\lib\gptcache\processor
+creating build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\cohere_rerank.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\distance.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\exact_match.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\kreciprocal.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\np.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\onnx.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\sbert_crossencoder.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\sequence_match.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\similarity_evaluation.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\time.py -> build\lib\gptcache\similarity_evaluation
+copying gptcache\similarity_evaluation\__init__.py -> build\lib\gptcache\similarity_evaluation
+creating build\lib\gptcache\utils
+copying gptcache\utils\cache_func.py -> build\lib\gptcache\utils
+copying gptcache\utils\dependency_control.py -> build\lib\gptcache\utils
+copying gptcache\utils\error.py -> build\lib\gptcache\utils
+copying gptcache\utils\lazy_import.py -> build\lib\gptcache\utils
+copying gptcache\utils\log.py -> build\lib\gptcache\utils
+copying gptcache\utils\response.py -> build\lib\gptcache\utils
+copying gptcache\utils\softmax.py -> build\lib\gptcache\utils
+copying gptcache\utils\time.py -> build\lib\gptcache\utils
+copying gptcache\utils\token.py -> build\lib\gptcache\utils
+copying gptcache\utils\__init__.py -> build\lib\gptcache\utils
+creating build\lib\gptcache\manager\eviction
+copying gptcache\manager\eviction\base.py -> build\lib\gptcache\manager\eviction
+copying gptcache\manager\eviction\manager.py -> build\lib\gptcache\manager\eviction
+copying gptcache\manager\eviction\memory_cache.py -> build\lib\gptcache\manager\eviction
+copying gptcache\manager\eviction\__init__.py -> build\lib\gptcache\manager\eviction
+creating build\lib\gptcache\manager\object_data
+copying gptcache\manager\object_data\base.py -> build\lib\gptcache\manager\object_data
+copying gptcache\manager\object_data\local_storage.py -> build\lib\gptcache\manager\object_data
+copying gptcache\manager\object_data\manager.py -> build\lib\gptcache\manager\object_data
+copying gptcache\manager\object_data\s3_storage.py -> build\lib\gptcache\manager\object_data
+copying gptcache\manager\object_data\__init__.py -> build\lib\gptcache\manager\object_data
+creating build\lib\gptcache\manager\scalar_data
+copying gptcache\manager\scalar_data\base.py -> build\lib\gptcache\manager\scalar_data
+copying gptcache\manager\scalar_data\manager.py -> build\lib\gptcache\manager\scalar_data
+copying gptcache\manager\scalar_data\mongo.py -> build\lib\gptcache\manager\scalar_data
+copying gptcache\manager\scalar_data\redis_storage.py -> build\lib\gptcache\manager\scalar_data
+copying gptcache\manager\scalar_data\sql_storage.py -> build\lib\gptcache\manager\scalar_data
+copying gptcache\manager\scalar_data\__init__.py -> build\lib\gptcache\manager\scalar_data
+creating build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\base.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\chroma.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\docarray_index.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\faiss.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\hnswlib_store.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\manager.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\milvus.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\pgvector.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\qdrant.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\redis_vectorstore.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\usearch.py -> build\lib\gptcache\manager\vector_data
+copying gptcache\manager\vector_data\__init__.py -> build\lib\gptcache\manager\vector_data
+creating build\lib\gptcache\processor\context
+copying gptcache\processor\context\concat_context.py -> build\lib\gptcache\processor\context
+copying gptcache\processor\context\context.py -> build\lib\gptcache\processor\context
+copying gptcache\processor\context\selective_context.py -> build\lib\gptcache\processor\context
+copying gptcache\processor\context\summarization_context.py -> build\lib\gptcache\processor\context
+copying gptcache\processor\context\__init__.py -> build\lib\gptcache\processor\context
+creating build\bdist.win-amd64
+creating build\bdist.win-amd64\egg
+creating build\bdist.win-amd64\egg\gptcache
+creating build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\adapter.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\api.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\base.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\diffusers.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\dolly.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\langchain_models.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\llama_cpp.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\minigpt4.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\openai.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\replicate.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\stability_sdk.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\adapter\__init__.py -> build\bdist.win-amd64\egg\gptcache\adapter
+copying build\lib\gptcache\client.py -> build\bdist.win-amd64\egg\gptcache
+copying build\lib\gptcache\config.py -> build\bdist.win-amd64\egg\gptcache
+copying build\lib\gptcache\core.py -> build\bdist.win-amd64\egg\gptcache
+creating build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\base.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\cohere.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\data2vec.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\fasttext.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\huggingface.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\langchain.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\onnx.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\openai.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\paddlenlp.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\rwkv.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\sbert.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\string.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\timm.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\uform.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\vit.py -> build\bdist.win-amd64\egg\gptcache\embedding
+copying build\lib\gptcache\embedding\__init__.py -> build\bdist.win-amd64\egg\gptcache\embedding
+creating build\bdist.win-amd64\egg\gptcache\manager
+copying build\lib\gptcache\manager\data_manager.py -> build\bdist.win-amd64\egg\gptcache\manager
+creating build\bdist.win-amd64\egg\gptcache\manager\eviction
+copying build\lib\gptcache\manager\eviction\base.py -> build\bdist.win-amd64\egg\gptcache\manager\eviction
+copying build\lib\gptcache\manager\eviction\manager.py -> build\bdist.win-amd64\egg\gptcache\manager\eviction
+copying build\lib\gptcache\manager\eviction\memory_cache.py -> build\bdist.win-amd64\egg\gptcache\manager\eviction
+copying build\lib\gptcache\manager\eviction\__init__.py -> build\bdist.win-amd64\egg\gptcache\manager\eviction
+copying build\lib\gptcache\manager\eviction_manager.py -> build\bdist.win-amd64\egg\gptcache\manager
+copying build\lib\gptcache\manager\factory.py -> build\bdist.win-amd64\egg\gptcache\manager
+creating build\bdist.win-amd64\egg\gptcache\manager\object_data
+copying build\lib\gptcache\manager\object_data\base.py -> build\bdist.win-amd64\egg\gptcache\manager\object_data
+copying build\lib\gptcache\manager\object_data\local_storage.py -> build\bdist.win-amd64\egg\gptcache\manager\object_data
+copying build\lib\gptcache\manager\object_data\manager.py -> build\bdist.win-amd64\egg\gptcache\manager\object_data
+copying build\lib\gptcache\manager\object_data\s3_storage.py -> build\bdist.win-amd64\egg\gptcache\manager\object_data
+copying build\lib\gptcache\manager\object_data\__init__.py -> build\bdist.win-amd64\egg\gptcache\manager\object_data
+creating build\bdist.win-amd64\egg\gptcache\manager\scalar_data
+copying build\lib\gptcache\manager\scalar_data\base.py -> build\bdist.win-amd64\egg\gptcache\manager\scalar_data
+copying build\lib\gptcache\manager\scalar_data\manager.py -> build\bdist.win-amd64\egg\gptcache\manager\scalar_data
+copying build\lib\gptcache\manager\scalar_data\mongo.py -> build\bdist.win-amd64\egg\gptcache\manager\scalar_data
+copying build\lib\gptcache\manager\scalar_data\redis_storage.py -> build\bdist.win-amd64\egg\gptcache\manager\scalar_data
+copying build\lib\gptcache\manager\scalar_data\sql_storage.py -> build\bdist.win-amd64\egg\gptcache\manager\scalar_data
+copying build\lib\gptcache\manager\scalar_data\__init__.py -> build\bdist.win-amd64\egg\gptcache\manager\scalar_data
+creating build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\base.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\chroma.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\docarray_index.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\faiss.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\hnswlib_store.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\manager.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\milvus.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\pgvector.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\qdrant.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\redis_vectorstore.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\usearch.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\vector_data\__init__.py -> build\bdist.win-amd64\egg\gptcache\manager\vector_data
+copying build\lib\gptcache\manager\__init__.py -> build\bdist.win-amd64\egg\gptcache\manager
+creating build\bdist.win-amd64\egg\gptcache\processor
+copying build\lib\gptcache\processor\check_hit.py -> build\bdist.win-amd64\egg\gptcache\processor
+creating build\bdist.win-amd64\egg\gptcache\processor\context
+copying build\lib\gptcache\processor\context\concat_context.py -> build\bdist.win-amd64\egg\gptcache\processor\context
+copying build\lib\gptcache\processor\context\context.py -> build\bdist.win-amd64\egg\gptcache\processor\context
+copying build\lib\gptcache\processor\context\selective_context.py -> build\bdist.win-amd64\egg\gptcache\processor\context
+copying build\lib\gptcache\processor\context\summarization_context.py -> build\bdist.win-amd64\egg\gptcache\processor\context
+copying build\lib\gptcache\processor\context\__init__.py -> build\bdist.win-amd64\egg\gptcache\processor\context
+copying build\lib\gptcache\processor\post.py -> build\bdist.win-amd64\egg\gptcache\processor
+copying build\lib\gptcache\processor\pre.py -> build\bdist.win-amd64\egg\gptcache\processor
+copying build\lib\gptcache\processor\__init__.py -> build\bdist.win-amd64\egg\gptcache\processor
+copying build\lib\gptcache\report.py -> build\bdist.win-amd64\egg\gptcache
+copying build\lib\gptcache\session.py -> build\bdist.win-amd64\egg\gptcache
+creating build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\cohere_rerank.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\distance.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\exact_match.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\kreciprocal.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\np.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\onnx.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\sbert_crossencoder.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\sequence_match.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\similarity_evaluation.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\time.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+copying build\lib\gptcache\similarity_evaluation\__init__.py -> build\bdist.win-amd64\egg\gptcache\similarity_evaluation
+creating build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\cache_func.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\dependency_control.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\error.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\lazy_import.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\log.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\response.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\softmax.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\time.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\token.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\utils\__init__.py -> build\bdist.win-amd64\egg\gptcache\utils
+copying build\lib\gptcache\__init__.py -> build\bdist.win-amd64\egg\gptcache
+creating build\bdist.win-amd64\egg\gptcache_server
+copying build\lib\gptcache_server\server.py -> build\bdist.win-amd64\egg\gptcache_server
+copying build\lib\gptcache_server\__init__.py -> build\bdist.win-amd64\egg\gptcache_server
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\adapter.py to adapter.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\api.py to api.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\base.py to base.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\diffusers.py to diffusers.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\dolly.py to dolly.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\langchain_models.py to langchain_models.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\llama_cpp.py to llama_cpp.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\minigpt4.py to minigpt4.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\openai.py to openai.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\replicate.py to replicate.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\stability_sdk.py to stability_sdk.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\adapter\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\client.py to client.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\config.py to config.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\core.py to core.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\base.py to base.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\cohere.py to cohere.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\data2vec.py to data2vec.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\fasttext.py to fasttext.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\huggingface.py to huggingface.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\langchain.py to langchain.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\onnx.py to onnx.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\openai.py to openai.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\paddlenlp.py to paddlenlp.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\rwkv.py to rwkv.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\sbert.py to sbert.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\string.py to string.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\timm.py to timm.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\uform.py to uform.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\vit.py to vit.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\embedding\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\data_manager.py to data_manager.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\eviction\base.py to base.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\eviction\manager.py to manager.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\eviction\memory_cache.py to memory_cache.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\eviction\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\eviction_manager.py to eviction_manager.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\factory.py to factory.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\object_data\base.py to base.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\object_data\local_storage.py to local_storage.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\object_data\manager.py to manager.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\object_data\s3_storage.py to s3_storage.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\object_data\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\scalar_data\base.py to base.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\scalar_data\manager.py to manager.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\scalar_data\mongo.py to mongo.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\scalar_data\redis_storage.py to redis_storage.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\scalar_data\sql_storage.py to sql_storage.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\scalar_data\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\base.py to base.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\chroma.py to chroma.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\docarray_index.py to docarray_index.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\faiss.py to faiss.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\hnswlib_store.py to hnswlib_store.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\manager.py to manager.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\milvus.py to milvus.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\pgvector.py to pgvector.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\qdrant.py to qdrant.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\redis_vectorstore.py to redis_vectorstore.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\usearch.py to usearch.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\vector_data\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\manager\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\check_hit.py to check_hit.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\context\concat_context.py to concat_context.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\context\context.py to context.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\context\selective_context.py to selective_context.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\context\summarization_context.py to summarization_context.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\context\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\post.py to post.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\pre.py to pre.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\processor\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\report.py to report.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\session.py to session.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\cohere_rerank.py to cohere_rerank.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\distance.py to distance.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\exact_match.py to exact_match.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\kreciprocal.py to kreciprocal.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\np.py to np.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\onnx.py to onnx.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\sbert_crossencoder.py to sbert_crossencoder.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\sequence_match.py to sequence_match.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\similarity_evaluation.py to similarity_evaluation.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\time.py to time.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\similarity_evaluation\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\cache_func.py to cache_func.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\dependency_control.py to dependency_control.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\error.py to error.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\lazy_import.py to lazy_import.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\log.py to log.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\response.py to response.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\softmax.py to softmax.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\time.py to time.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\token.py to token.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\utils\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache\__init__.py to __init__.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache_server\server.py to server.cpython-311.pyc
+byte-compiling build\bdist.win-amd64\egg\gptcache_server\__init__.py to __init__.cpython-311.pyc
+creating build\bdist.win-amd64\egg\EGG-INFO
+copying gptcache.egg-info\PKG-INFO -> build\bdist.win-amd64\egg\EGG-INFO
+copying gptcache.egg-info\SOURCES.txt -> build\bdist.win-amd64\egg\EGG-INFO
+copying gptcache.egg-info\dependency_links.txt -> build\bdist.win-amd64\egg\EGG-INFO
+copying gptcache.egg-info\entry_points.txt -> build\bdist.win-amd64\egg\EGG-INFO
+copying gptcache.egg-info\requires.txt -> build\bdist.win-amd64\egg\EGG-INFO
+copying gptcache.egg-info\top_level.txt -> build\bdist.win-amd64\egg\EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+creating dist
+creating 'dist\gptcache-0.1.35-py3.11.egg' and adding 'build\bdist.win-amd64\egg' to it
+removing 'build\bdist.win-amd64\egg' (and everything under it)
+Processing gptcache-0.1.35-py3.11.egg
+Copying gptcache-0.1.35-py3.11.egg to c:\python311\lib\site-packages
+Adding gptcache 0.1.35 to easy-install.pth file
+Installing gptcache_server-script.py script to C:\Python311\Scripts
+Installing gptcache_server.exe script to C:\Python311\Scripts
+
+Installed c:\python311\lib\site-packages\gptcache-0.1.35-py3.11.egg
+Processing dependencies for gptcache==0.1.35
+Searching for requests==2.31.0
+Best match: requests 2.31.0
+Adding requests 2.31.0 to easy-install.pth file
+
+Using c:\python311\lib\site-packages
+Searching for cachetools==5.3.1
+Best match: cachetools 5.3.1
+Adding cachetools 5.3.1 to easy-install.pth file
+
+Using c:\python311\lib\site-packages
+Searching for numpy==1.25.0
+Best match: numpy 1.25.0
+Adding numpy 1.25.0 to easy-install.pth file
+Installing f2py-script.py script to C:\Python311\Scripts
+Installing f2py.exe script to C:\Python311\Scripts
+
+Using c:\python311\lib\site-packages
+Searching for certifi==2023.5.7
+Best match: certifi 2023.5.7
+Adding certifi 2023.5.7 to easy-install.pth file
+
+Using c:\python311\lib\site-packages
+Searching for urllib3==2.0.3
+Best match: urllib3 2.0.3
+Adding urllib3 2.0.3 to easy-install.pth file
+
+Using c:\python311\lib\site-packages
+Searching for idna==3.4
+Best match: idna 3.4
+Adding idna 3.4 to easy-install.pth file
+
+Using c:\python311\lib\site-packages
+Searching for charset-normalizer==3.2.0
+Best match: charset-normalizer 3.2.0
+Adding charset-normalizer 3.2.0 to easy-install.pth file
+Installing normalizer-script.py script to C:\Python311\Scripts
+Installing normalizer.exe script to C:\Python311\Scripts
+
+Using c:\python311\lib\site-packages
+Finished processing dependencies for gptcache==0.1.35
