@@ -1,6 +1,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModel
-#人才素质、进步
+#启动ChatGLM2的代码
 from transformers import AutoTokenizer, AutoModel
 tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm2-6b", trust_remote_code=True)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

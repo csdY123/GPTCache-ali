@@ -41,7 +41,7 @@ __all__ = [
     "import_fastapi",
     "import_redis",
     "import_qdrant",
-    ]
+]
 
 import importlib.util
 from typing import Optional
@@ -258,6 +258,10 @@ def import_fastapi():
 def import_redis():
     _check_library("redis")
     _check_library("redis_om")
+
+
+def import_rocksdb():
+    _check_library("rocksdict")
 
 
 def import_starlette():

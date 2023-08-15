@@ -5,6 +5,8 @@ sys.path.insert(1, os.path.realpath('..'))
 import requests
 from typing import Any
 
+#能够访问通义千问的代码
+
 # Set LLM = "qwen-plus-internal-v1" if try to use anolis copilot with "通义千问".
 # In other cases, you can set the name of the LLM according to your preference.
 LLM = "qwen-plus-internal-v1"

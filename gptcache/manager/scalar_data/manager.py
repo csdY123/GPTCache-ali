@@ -83,6 +83,9 @@ class CacheBase:
                 table_name=table_name,
                 table_len_config=table_len_config,
             )
+        elif name == "rocksdb":
+            from gptcache.manager.scalar_data.rocksdb_storage import rocksdbCacheStorage
+            return rocksdbCacheStorage()
         elif name == "mongo":
             from gptcache.manager.scalar_data.mongo import MongoStorage
 

@@ -39,7 +39,7 @@ questions = [
 for question in questions:
     start_time = time.time()
     response = qwen.ChatCompletion.create(
-        model='gpt-3.5-turbo',
+        model='gpt-3.5-turbo',  #调用的千问的模型
         messages=[
             {
                 'role': 'user',

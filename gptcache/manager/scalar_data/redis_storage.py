@@ -1,6 +1,5 @@
 import datetime
 from typing import List, Optional
-
 import numpy as np
 
 from gptcache.manager.scalar_data.base import (
@@ -36,15 +35,20 @@ def get_models(global_key):
         """
         Custom class for storing embedding result.
         An embedding of type ``bytes`` is stored against Hash record type for the provided key.
+        用于存储嵌入结果的自定义类。
+         类型“bytes”的嵌入是针对所提供的密钥的哈希记录类型存储的。
         :param pk: Primary key against which hash data for embedding would be stored
         :type pk: str
-        :param embedding: Embedding information to store
+        :param embedding: Embedding information to store    嵌入要存储的信息
         :type embedding: bytes
 
         Note:
             As of this implementation, redis-om doesn't have a good compatibility to store bytes data
             and successfully retrieve it without corruption.
             In addition to that, decoding while getting the response is disabled as well.
+            截至此实现，redis-om 没有很好的兼容性来存储字节数据
+             并成功检索它而没有损坏。
+             除此之外，在获取响应时进行解码也被禁用。
         """
 
         prefix = global_key + ":embedding"
@@ -141,7 +145,7 @@ def get_models(global_key):
 class RedisCacheStorage(CacheStorage):
     """
      Using redis-om as OM to store data in redis cache storage
-
+使用redis-om作为OM将数据存储在redis缓存存储中
     :param host: redis host, default value 'localhost'
      :type host: str
      :param port: redis port, default value 27017
@@ -263,7 +267,7 @@ class RedisCacheStorage(CacheStorage):
         with self.con.pipeline() as pipeline:
             for data in all_data:
                 ids.append(self._insert(data, pipeline=pipeline))
-            pipeline.execute()
+            pipeline.execute()#在使用Redis客户端与Redis服务器进行交互时，可以使用pipeline来一次性发送多个命令，并将它们打包成一个请求发送给服务器，然后一次性接收多个命令的响应结果。
         return ids
 
     def get_data_by_id(self, key: str):

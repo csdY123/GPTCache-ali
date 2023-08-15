@@ -29,7 +29,7 @@ Faiss（Facebook AI Similarity Search）是一个高性能的相似性搜索库�
         self._top_k = top_k
         #print("top_k:",top_k)
         if os.path.isfile(index_file_path):
-            self._index = faiss.read_index(index_file_path)
+            self._index = faiss.read_index(index_file_path)     #读取到内存中
 
 
     def mul_add(self, datas: List[VectorData]):
