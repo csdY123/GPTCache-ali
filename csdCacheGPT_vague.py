@@ -11,7 +11,7 @@ from gptcache.embedding import Onnx
 from gptcache.manager import CacheBase, VectorBase, get_data_manager
 from gptcache.similarity_evaluation.distance import SearchDistanceEvaluation
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 print("Cache loading.....")
 
 onnx = Onnx()
