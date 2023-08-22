@@ -72,7 +72,7 @@ class ChatCompletion(BaseCacheLLM):
         LLM = "qwen-plus-internal-v1"
         HOST = "47.92.68.166"
         PORT = "5000"
-        DSAHSCOPE_KEY = "4e6k4p6bi5pqUEucVR63yWIqht62jC5w72807B8FE3FC11EDAA072AEC6FC183A8"
+        DSAHSCOPE_KEY = "DSAHSCOPE_KEY"
         if LLM == "qwen-plus-internal-v1":
             try:
                 from dashscope import Generation
